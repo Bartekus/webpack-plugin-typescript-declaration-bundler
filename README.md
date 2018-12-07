@@ -1,7 +1,7 @@
 # webpack-plugin-typescript-declaration-bundler
 Based on: [declaration-bundler-webpack-plugin](https://github.com/smol/declaration-bundler-webpack-plugin)
 
-[![travis build](https://img.shields.io/travis/bartekus/webpack-plugin-typescript-declaration-bundler.svg?style=flat-square)](https://travis-ci.org/Bartekus/webpack-plugin-typescript-declaration-bundler)
+[![travis build](https://img.shields.io/travis/Bartekus/webpack-plugin-typescript-declaration-bundler.svg?style=flat-square)](https://travis-ci.org/Bartekus/webpack-plugin-typescript-declaration-bundler)
 [![codecov coverage](https://img.shields.io/codecov/c/github/bartekus/webpack-plugin-typescript-declaration-bundler.svg?style=flat-square)](https://codecov.io/github/bartekus/webpack-plugin-typescript-declaration-bundler)
 [![version](https://img.shields.io/npm/v/webpack-plugin-typescript-declaration-bundler.svg?style=flat-square)](https://npm.im/webpack-plugin-typescript-declaration-bundler)
 [![downloads](https://img.shields.io/npm/dm/webpack-plugin-typescript-declaration-bundler.svg?style=flat-square)](https://npm-stat.com/charts.html?package=webpack-plugin-typescript-declaration-bundler&from=2018-12-05)
