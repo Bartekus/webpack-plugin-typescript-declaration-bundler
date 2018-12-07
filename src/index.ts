@@ -59,7 +59,6 @@ module.exports = class WebpackPluginTypescriptDeclarationBundler {
       const lines = data.split('\n');
       let i = lines.length;
 
-
       while (i--) {
         const line = lines[i];
 
@@ -68,6 +67,9 @@ module.exports = class WebpackPluginTypescriptDeclarationBundler {
 
         // exclude export statements
         excludeLine = excludeLine || line.indexOf('export =') !== -1;
+
+        // exclude empty export statements
+        excludeLine = excludeLine || line.indexOf('export {};') !== -1;
 
         // exclude import statements
         excludeLine = excludeLine || (/import ([a-z0-9A-Z_-]+) = require\(/).test(line);
@@ -90,7 +92,7 @@ module.exports = class WebpackPluginTypescriptDeclarationBundler {
       declarations += lines.join('\n') + '\n\n';
     }
 
-    return 'declare module ' + this.moduleName + '\n{\n' + declarations + '}';
+    return 'declare module ' + this.moduleName + ' {' + declarations + '}';
   }
 
-}
+};
