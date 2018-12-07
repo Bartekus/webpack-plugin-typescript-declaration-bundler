@@ -1,0 +1,62 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "jsRules": {
+    "max-line-length": {
+      "options": [180]
+    }
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**", "dist/**"]
+  },
+  "rules": {
+    "arrow-parens": false,
+    "comment-format": true,
+    "completed-docs": [
+      true,
+      {
+        "enums": true,
+        "functions": {
+          "visibilities": ["exported"]
+        },
+        "methods": {
+          "locations": "instance",
+          "privacies": ["public", "protected"]
+        }
+      }
+    ],
+    "component-class-suffix": false,
+    "forin": false,
+    "interface-name": false,
+    "max-classes-per-file": [true, 1],
+    "max-line-length": {
+      "options": [160]
+    },
+    "member-access": false,
+    "member-ordering": [true],
+    "new-parens": true,
+    "newline-per-chained-call": false,
+    "no-any": false,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": false,
+    "no-console": [false],
+    "no-empty-interface": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "no-inferrable-types": false,
+    "no-output-on-prefix": false,
+    "no-shadowed-variable": false,
+    "no-string-literal": false,
+    "no-submodule-imports": false,
+    "no-use-before-declare": false,
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "prefer-const": false,
+    "quotemark": [true, "single"],
+    "radix": false,
+    "trailing-comma": [true],
+    "use-life-cycle-interface": false,
+    "use-view-encapsulation": false
+  }
+}
