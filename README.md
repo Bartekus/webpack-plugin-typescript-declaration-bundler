@@ -32,7 +32,7 @@ This plugin was developed as an extention to the [ts-loader](https://github.com/
 
 Here is an example setup:
 
-    //init.ts
+    // init.ts
     import Foo = require('./foo');
     import Foo2 = require('./foo2');
     var register:Function = (function()
@@ -45,12 +45,12 @@ Here is an example setup:
     })();
     export = register;
 
-    //foo.ts
+    // foo.ts
     export class Foo {
         bar():boolean { return true; }
     }
 
-    //foo2.ts
+    // foo2.ts
     import Foo = require('./foo');
     export class Foo2 extends Foo {
         bar():boolean { return true; }
@@ -58,17 +58,17 @@ Here is an example setup:
 
 Which generates (when using the declaration=true flag for the typescript compiler)
 
-    //init.d.ts
+    // init.d.ts
     var register: Function;
     export = register;
 
-    //foo.d.ts
+    // foo.d.ts
     declare class Foo {
         bar():boolean;
     }
     export = Foo;
 
-    //foo2.d.ts
+    // foo2.d.ts
     import Foo = require('./foo');
     declare class Foo2 extends Foo{
         bar():boolean;
@@ -102,7 +102,7 @@ Which with the following webpack.config.js
 
 Will be turned into:
 
-    //bundle.d.ts
+    // bundle.d.ts
     declare module some.path.moduleName {
 
         var register: Function;
