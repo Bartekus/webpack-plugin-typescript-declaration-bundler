@@ -1,4 +1,4 @@
-import WebpackPluginTypescriptDeclarationBundler from './index'
+const WebpackPluginTypescriptDeclarationBundler = require('./index');
 
 /**
  * WebpackPluginTypescriptDeclarationBundler test

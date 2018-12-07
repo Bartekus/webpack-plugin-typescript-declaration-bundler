@@ -2,7 +2,7 @@
 /**
  * WebpackPluginTypescriptDeclarationBundler class
  */
-export default class WebpackPluginTypescriptDeclarationBundler {
+module.exports = class WebpackPluginTypescriptDeclarationBundler {
   out: string;
   moduleName: string;
   mode: string;
