@@ -20,6 +20,8 @@
     "build:umd": "webpack --output-filename index.js",
     "build:umd.min": "webpack --output-filename index.min.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release-pre": "semantic-release pre",
+    "semantic-release-post": "semantic-release post",
     "lint": "tslint --fix --project tsconfig.json -c tslint.json 'src/**/*.{ts,tsx}' 'test/**/*.ts'",
     "report": "cat ./coverage/lcov.info | codecov",
     "test": "jest --env=jsdom --colors --verbose",
