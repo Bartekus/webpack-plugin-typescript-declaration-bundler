@@ -8,7 +8,7 @@ const libraryName = process.env.npm_package_name;
 const minimize = process.env.npm_lifecycle_event.split('.')[1] === 'min';
 
 module.exports = {
-  mode: 'production',
+  mode: minimize ? 'production' : 'development',
   context: path.resolve(__dirname),
   devtool: 'source-map',
   entry: {
